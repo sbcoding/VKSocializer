@@ -4,7 +4,8 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
- *
+ *@author Semenyuk Vadim
+ * This class represent Account type
  */
 @Entity
 @Table(name = "account")
