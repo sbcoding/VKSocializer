@@ -13,9 +13,9 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(name = "login")
+    @Column(name = "login", nullable = false)
     private String login;
-    @Column(name = "password")
+    @Column(name = "password", nullable = false)
     private String password;
     @Column(name="access_token")
     private String accessToken;
