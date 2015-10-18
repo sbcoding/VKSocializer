@@ -7,7 +7,7 @@ import java.util.Set;
  * @author V_Semenyuk
  * O_Balitsky
  */
-@MappedSuperclass
+@Entity
 public abstract class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
