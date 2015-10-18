@@ -6,8 +6,7 @@ import java.util.Set;
 /**
  * Created by kotun on 15.10.2015.
  */
-@Entity
-@Table(name = "user")
+@MappedSuperclass
 public abstract class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,8 +18,7 @@ public abstract class User {
     @ManyToOne
     @JoinColumn(name = "roleId", nullable = false)
     private Role role;
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
-    private Set<Account> accounts;
+
 
     public User() {
     }
@@ -53,11 +51,5 @@ public abstract class User {
         this.role = role;
     }
 
-    public Set<Account> getAccounts() {
-        return accounts;
-    }
 
-    public void setAccounts(Set<Account> accounts) {
-        this.accounts = accounts;
-    }
 }

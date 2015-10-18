@@ -21,6 +21,9 @@ public class Account {
     private String accessToken;
     @Column(name = "data")
     private Date date;
+    @ManyToOne
+    @JoinColumn(name = "customerId", nullable = false)
+    private Customer customer;
 
     public long getId() {
         return id;
