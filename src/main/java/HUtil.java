@@ -10,6 +10,7 @@ public class HUtil {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("vkS");
         EntityManager em = emf.createEntityManager();
         em.close();
+        emf.close();
 
     }
 }
