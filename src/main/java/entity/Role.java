@@ -3,7 +3,7 @@ package entity;
 import javax.persistence.*;
 
 /**
- * Created by kotun on 16.10.2015.
+ * @author Sasha Balitsky
  */
 @Entity
 @Table(name = "role")
