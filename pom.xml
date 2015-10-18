@@ -13,6 +13,12 @@
           <artifactId>hibernate-entitymanager</artifactId>
           <version>5.0.2.Final</version>
       </dependency>
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.36</version>
+      </dependency>
+
   </dependencies>
   <build>
     <finalName>1</finalName>
