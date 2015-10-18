@@ -11,6 +11,5 @@ public class HUtil {
         EntityManager em = emf.createEntityManager();
         em.close();
         emf.close();
-
     }
 }
