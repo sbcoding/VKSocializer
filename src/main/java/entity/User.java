@@ -1,7 +1,6 @@
 package entity;
 
 import javax.persistence.*;
-import java.util.Set;
 
 /**
  * @author V_Semenyuk
@@ -19,6 +18,7 @@ public abstract class User {
     @ManyToOne
     @JoinColumn(name = "roleId", nullable = false)
     private Role role;
+
 
 
     public User() {
