@@ -1,13 +1,12 @@
 package entity;
 
 import javax.persistence.*;
-import java.util.Set;
 
 /**
  * @author V_Semenyuk
  * O_Balitsky
  */
-@MappedSuperclass
+@Entity
 public abstract class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,6 +18,7 @@ public abstract class User {
     @ManyToOne
     @JoinColumn(name = "roleId", nullable = false)
     private Role role;
+
 
 
     public User() {
