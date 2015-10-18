@@ -4,7 +4,8 @@ import javax.persistence.*;
 import java.util.Set;
 
 /**
- * Created by kotun on 15.10.2015.
+ * @author V_Semenyuk
+ * O_Balitsky
  */
 @MappedSuperclass
 public abstract class User {
