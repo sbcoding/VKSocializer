@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
  */
 public class HUtil {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("vkS");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("vksocializer");
         EntityManager em = emf.createEntityManager();
         em.close();
         emf.close();

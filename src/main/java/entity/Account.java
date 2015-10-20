@@ -19,11 +19,14 @@ public class Account {
     private String password;
     @Column(name="access_token")
     private String accessToken;
-    @Column(name = "data")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date date;
     @ManyToOne
     @JoinColumn(name = "customerId", nullable = false)
     private Customer customer;
+
+    public Account() {
+    }
 
     public long getId() {
         return id;
@@ -61,6 +64,5 @@ public class Account {
         this.date = date;
     }
 
-    public Account() {
-    }
+
 }

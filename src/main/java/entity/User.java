@@ -2,15 +2,16 @@ package entity;
 
 import javax.persistence.*;
 
+
 /**
  * @author V_Semenyuk
- * O_Balitsky
+ *         O_Balitsky
  */
 @Entity
 public abstract class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    protected long id;
     @Column(name = "login", nullable = false)
     private String login;
     @Column(name = "password", nullable = false)
@@ -20,13 +21,13 @@ public abstract class User {
     private Role role;
 
 
-
     public User() {
     }
 
     public long getId() {
         return id;
     }
+
 
     public String getLogin() {
         return login;
